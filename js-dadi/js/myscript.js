@@ -7,6 +7,10 @@ console.log(dadoAI)
 
 if(dadoUtente > dadoAI){
     document.getElementById("risultato").innerHTML = "Hai vinto"
-}else{
+}
+if(dadoUtente == dadoAI){
+    document.getElementById("risultato").innerHTML = "Pari, ritentate"
+}
+else{
     document.getElementById("risultato").innerHTML = "AI ha vinto"
 }
