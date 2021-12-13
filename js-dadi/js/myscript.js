@@ -5,13 +5,18 @@ let  dadoAI =  (Math.floor (Math.random()*6+1));   //facciamo la variabile del l
 console.log(dadoUtente) //stampiamo sulla console log il risultato del lancio dei dadi dell utente e dell AI
 console.log(dadoAI)
 
+let risulatoDadi = document.getElementById("risultato")
 
 if(dadoUtente > dadoAI){    //specificiamo che se  il risultato del lancio del dado dell utente è maggiore del numero del dado dell AI vince l'utente 
-    document.getElementById("risultato").innerHTML = "Utente rolla"  +" "+ dadoUtente +" ,"+  "AI rolla"  +" "+ dadoAI  +" ,"+ "Utente ha vinto"
+    risulatoDadi.innerHTML = "Utente rolla"  +" "+ dadoUtente +" ,"+  "AI rolla"  +" "+ dadoAI  +" ,"+ "Utente ha vinto"
 }
 else if(dadoUtente == dadoAI){ //se il risultato del lancio del dado è pari nessuno vince 
-    document.getElementById("risultato").innerHTML = "Utente rolla"  +" "+ dadoUtente +" ,"+  "AI rolla"  +" "+ dadoAI  +" ,"+ "Pari ritenta"
+    risulatoDadi.innerHTML = "Utente rolla"  +" "+ dadoUtente +" ,"+  "AI rolla"  +" "+ dadoAI  +" ,"+ "Pari ritenta"
 }
 else{ //se il risultato dei dadi è a favore dell AI vince lei
-    document.getElementById("risultato").innerHTML = "Utente rolla"  +" "+ dadoUtente +" ,"+ "AI rolla"  +" "+ dadoAI  +" ,"+ "AI ha vinto"
+    risulatoDadi.innerHTML = "Utente rolla"  +" "+ dadoUtente +" ,"+ "AI rolla"  +" "+ dadoAI  +" ,"+ "AI ha vinto"
 }
+
+let risultatoDadi = (dadoUtente +" "+ dadoAI)
+
+console.log(risultatoDadi)
