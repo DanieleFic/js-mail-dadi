@@ -1,0 +1,1 @@
+const mail = prompt (" Inserici Email "); //Inserisco il prompt in cui l'utente inserisce l'email
