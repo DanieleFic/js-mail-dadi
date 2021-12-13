@@ -7,11 +7,11 @@ console.log(dadoAI)
 
 
 if(dadoUtente > dadoAI){    //specificiamo che se  il risultato del lancio del dado dell utente è maggiore del numero del dado dell AI vince l'utente 
-    document.getElementById("risultato").innerHTML = "Utente rolla"  +" ,"+ dadoUtente +" "+  "AI rolla"  +" "+ dadoAI  +" ,"+ "Utente ha vinto"
+    document.getElementById("risultato").innerHTML = "Utente rolla"  +" "+ dadoUtente +" ,"+  "AI rolla"  +" "+ dadoAI  +" ,"+ "Utente ha vinto"
 }
 else if(dadoUtente == dadoAI){ //se il risultato del lancio del dado è pari nessuno vince 
-    document.getElementById("risultato").innerHTML = "Utente rolla"  +" ,"+ dadoUtente +" "+  "AI rolla"  +" "+ dadoAI  +" ,"+ "Pari, ritenta"
+    document.getElementById("risultato").innerHTML = "Utente rolla"  +" "+ dadoUtente +" ,"+  "AI rolla"  +" "+ dadoAI  +" ,"+ "Pari ritenta"
 }
 else{ //se il risultato dei dadi è a favore dell AI vince lei
-    document.getElementById("risultato").innerHTML = "Utente rolla"  +" ,"+ dadoUtente +" "+ "AI rolla"  +" "+ dadoAI  +" ,"+ "AI ha vinto"
+    document.getElementById("risultato").innerHTML = "Utente rolla"  +" "+ dadoUtente +" ,"+ "AI rolla"  +" "+ dadoAI  +" ,"+ "AI ha vinto"
 }
