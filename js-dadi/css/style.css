@@ -14,3 +14,9 @@ body{
 #cont{
     height: 500px;
 }
+
+.ms_buttonrefresh{
+    border-radius: 20px;
+    color: white;
+    background-color: yellowgreen;
+}
