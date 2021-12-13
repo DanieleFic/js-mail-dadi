@@ -5,4 +5,12 @@ body{
 #risultato{
     font-size: 30px;
     font-weight: 900;
+    background-color: violet;
+    border-radius: 5%;
+    height: 300px;
+    width: 700px;
+}
+
+#cont{
+    height: 500px;
 }
